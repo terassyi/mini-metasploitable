@@ -1,15 +1,6 @@
 version: '3'
 
 services:
-    kali:
-        build: ./kali
-        container_name: kali
-        tty: true
-        
-        networks:
-            cyberrange:
-                ipv4_address: 192.168.100.2
-
     owasp-juice-shop:
         image: bkimminich/juice-shop
         container_name: owasp-juice-shop
